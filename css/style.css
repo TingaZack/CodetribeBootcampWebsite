@@ -37,6 +37,7 @@ video {
 }
 #userImage {
     width: 500px;
+    margin: 16px;
 }
 .bioBox {
     width: 70%;
