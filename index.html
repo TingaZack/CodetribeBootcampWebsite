@@ -7,35 +7,70 @@
     <meta name="author" content="Codetribe">
     <meta name="keywords" content="HTML, Turorials, Codetribe, mLab,">
     <title>Codetribe Bootcamp Website</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
     <header>
-        <nav>
-            <a href="#">Home</a>
-            <a href="about.html">About me</a>
-            <a href="contact.html">Contact us</a>
-        </nav>
+        <table id="headerTable">
+
+            <tr>
+                <!-- table data which houses our logo -->
+                <td>
+                    <img class="logo" src="./assets/imgs/logo.png" alt="">
+                </td>
+
+                <!-- table data which houses our nav bar -->
+                <td align="right">
+                    <nav>
+                        <a href="#">Home</a>
+                        <a href="about.html">About me</a>
+                        <a href="contact.html">Contact us</a>
+                    </nav>
+                </td>
+
+            </tr>
+        </table>
     </header>
 
     <main>
-        <h1>Home Page</h1>
+        <table id="mainTable">
 
+            <tr>
+                <td colspan="2">
+                    <video controls poster="./assets/imgs/thumbnail.jpeg"
+                        src="./assets/videos/production ID_4118241.mp4"></video>
+                </td>
+            </tr>
 
-        <input placeholder="Email" type="email">
-        <input placeholder="Password" type="password">
-        <input type="submit" value="Submit">
-
-        <input type="file">
-
-
-        <textarea placeholder="Please insert your description" cols="60" rows="20"></textarea>
+            <tr>
+                <td width="50%" align="center">
+                    <div class="bioBox">
+                        <h1><b>User Name</b></h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti officiis hic similique
+                            reiciendis vitae, cupiditate libero cumque non facere ratione iure aspernatur repellat
+                            consequuntur eos tempore nostrum! Unde, voluptatum suscipit. <br><br>
+                            Lorem ipsum, dolor sit amet
+                            consectetur adipisicing elit. Debitis suscipit architecto a natus quisquam hic. Pariatur
+                            impedit
+                            minima qui obcaecati. Eius, aliquam voluptas? Doloremque aut tempore officiis tenetur
+                            dignissimos eligendi.</p>
+                        <a href="./about.html">
+                            <button class="btn">Learn more...</button>
+                        </a>
+                    </div>
+                </td>
+                <td align="right">
+                    <img id="userImage" src="./assets/imgs/user.jpeg" alt="">
+                </td>
+            </tr>
+        </table>
 
     </main>
 
     <footer>
-
+        <p class="footerText">Footer</p>
     </footer>
 
 </body>
